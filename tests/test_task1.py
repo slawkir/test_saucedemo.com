@@ -1,6 +1,8 @@
 import time
 
+
 from selenium import webdriver
+
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
@@ -14,7 +16,11 @@ user_pass = driver.find_element(By.ID, 'password')
 user_pass.send_keys('secret_sauce')
 login_btn = driver.find_element(By.ID, 'login-button')
 login_btn.click()
-print('Авторизация')
+
+
+
+
+
 
 
 # Шаг 2. Добавить товар Sauce Labs Fleece Jacket в корзину (нажать кнопку ADD TO CART)
