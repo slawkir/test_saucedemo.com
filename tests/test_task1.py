@@ -28,7 +28,7 @@ time.sleep(2) # чтобы визуально отследить добавле�
 btn_add_to_cart_sauce_labs_fleece_jacket = driver.find_element(By.ID, 'add-to-cart-sauce-labs-fleece-jacket')
 btn_add_to_cart_sauce_labs_fleece_jacket.click()
 
-print('Добавление товара')
+print('Товар Sauce Labs Fleece Jacket добавлен в корзину')
 
 
 # Шаг 3. Перейти в корзину нажатием кнопки сверху в правом углу в виде корзины
@@ -49,6 +49,16 @@ btn_continue_shopping = driver.find_element(By.ID, 'continue-shopping')
 btn_continue_shopping.click()
 
 print('Открытие главной странице приложения с товарами')
+
+
+# Шаг 5.  Добавить товар Sauce Labs Bolt T-Shirt в корзину (нажать кнопку ADD TO CART)
+
+time.sleep(2)
+
+btn_add_to_cart_sauce_labs_bolt_t_shirt = driver.find_element(By.ID, 'add-to-cart-sauce-labs-bolt-t-shirt')
+btn_add_to_cart_sauce_labs_bolt_t_shirt.click()
+
+print('Товар Sauce Labs Bolt T-Shirt добавлен в корзину')
 
 #чтобы страница после запуска резко не закрывалась
 while(True):
