@@ -25,8 +25,8 @@ print('Авторизация')
 
 time.sleep(2) # чтобы визуально отследить добавление товара в корзину
 
-btn_add_to_cart = driver.find_element(By.ID, 'add-to-cart-sauce-labs-fleece-jacket')
-btn_add_to_cart.click()
+btn_add_to_cart_sauce_labs_fleece_jacket = driver.find_element(By.ID, 'add-to-cart-sauce-labs-fleece-jacket')
+btn_add_to_cart_sauce_labs_fleece_jacket.click()
 
 print('Добавление товара')
 
