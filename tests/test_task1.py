@@ -40,6 +40,16 @@ shopping_cart.click()
 
 print('Переход в корзину')
 
+
+# Шаг 4. Нажать кнопку CONTINUE SHOPPING
+
+time.sleep(2)
+
+btn_continue_shopping = driver.find_element(By.ID, 'continue-shopping')
+btn_continue_shopping.click()
+
+print('Открытие главной странице приложения с товарами')
+
 #чтобы страница после запуска резко не закрывалась
 while(True):
     pass
