@@ -60,6 +60,12 @@ btn_add_to_cart_sauce_labs_bolt_t_shirt.click()
 
 print('Товар Sauce Labs Bolt T-Shirt добавлен в корзину')
 
-#чтобы страница после запуска резко не закрывалась
-while(True):
-    pass
+
+# Шаг 6.  Перейти в корзину нажатием кнопки сверху в правом углу в виде корзины
+
+time.sleep(1)
+shopping_cart = driver.find_element(By.XPATH, '//*[@id="shopping_cart_container"]/a')
+shopping_cart.click()
+
+print('Переход в корзину')
+time.sleep(3)
