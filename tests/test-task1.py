@@ -107,16 +107,3 @@ add_to_cart_tshirt()
 go_to_cart()
 
 time.sleep(5)
-
-
-
-
-
-
-
-
-#
-#
-#
-#
-
