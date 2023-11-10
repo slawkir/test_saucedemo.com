@@ -20,16 +20,15 @@ def auth_test():
     login_btn = driver.find_element(By.ID, 'login-button')
     login_btn.click()
     time.sleep(1)
+    # обработка, если введен правильные/неправильные данные при авторизации (логин-пароль)
     while True:
         try:
             driver.find_element(By.XPATH, '//*[@id="header_container"]/div[2]/span')
             print("Авторизация пройдена")
-
             break
         except:
             print("Неверные логин/пароль.")
             break
-
 
 #Шаг 2. Добавить товар Sauce Labs Fleece Jacket в корзину (нажать кнопку ADD TO CART)
 def add_to_cart_Sauce_Labs_Fleece():
@@ -41,7 +40,6 @@ def add_to_cart_Sauce_Labs_Fleece():
         try:
             driver.find_element(By.ID, 'remove-sauce-labs-fleece-jacket')
             print("Товар Sauce Labs Fleece Jacket добавлен в корзину")
-
             break
         except:
             print("Ошибка выбора товара")
@@ -56,7 +54,6 @@ def go_to_cart():
         try:
             driver.find_element(By.XPATH, '//*[@id="header_container"]/div[2]/span')
             print("Переход в корзину")
-
             break
         except:
             print("Ошибка, переход в корзину не состоялся")
@@ -72,7 +69,6 @@ def continue_shoping():
         try:
             driver.find_element(By.XPATH, '//*[@id="header_container"]/div[2]/span')
             print('Открытие главной страницы приложения с товарами')
-
             break
         except:
             print("Ошибка, переход главную страницу не состоялся")
@@ -88,12 +84,10 @@ def add_to_cart_tshirt():
         try:
             driver.find_element(By.ID, 'remove-sauce-labs-bolt-t-shirt')
             print('Товар Sauce Labs Bolt T-Shirt добавлен в корзину')
-
             break
         except:
             print("Ошибка, Товар Sauce Labs Bolt T-Shirt не добавлен в корзину")
             break
-
 
 # Шаг 6.  Перейти в корзину нажатием кнопки сверху в правом углу в виде корзины
 
